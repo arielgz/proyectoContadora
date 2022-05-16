@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster&family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@200;300;400;500&family=Roboto:ital,wght@0,500;1,400&family=Sniglet:wght@400;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -45,6 +44,9 @@ nav {
     font-weight: 600;
     color: rgb(28, 26, 26);
     font-family: 'Montserrat', sans-serif;
+}
+.logo:hover {
+    font-size: 25px;
 }
 
 .seccion-index {
@@ -135,6 +137,8 @@ footer {
     color: rgb(36, 36, 36);
     font-size: 25px;
     margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+
 }
 .about-content div p {
     width: 80%;
