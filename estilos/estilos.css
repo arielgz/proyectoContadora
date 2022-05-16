@@ -1,0 +1,844 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster&family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@200;300;400;500&family=Roboto:ital,wght@0,500;1,400&family=Sniglet:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+
+nav {
+    background-color:  #F7F7F7;
+    padding: 22px;
+}
+.navbar {
+    display: flex;
+    justify-content: end;
+} 
+
+.navbar li {
+    margin: 0 15px;
+    list-style-type: none;
+
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(16, 16, 16);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar li a:hover {
+    color: #FF6363;
+    font-weight: 500;
+
+}
+
+
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(28, 26, 26);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.seccion-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    
+    
+}
+
+.titulo1  {
+    color: black;
+    font-size: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
+}
+
+.titulo2{
+    color: black;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+    
+}
+
+.bg-img{
+    background: url('../img/bokeh-background-with-dusty-pink.jpeg');
+    background-repeat: no-repeat ; 
+    background-size: cover; 
+    background-attachment: fixed; 
+}
+.bg-img {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.footer-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-redes img {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+}
+.footer-redes li  {
+    list-style-type: none;
+
+
+}
+
+footer {
+    position: absolute;
+    bottom: 5px;
+    left: 35rem;
+}
+
+
+
+
+
+
+/* seccion acerca de mi */
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content img {
+    width: 550px;
+    border: 2px solid rgb(73, 62, 62);
+    border-radius: 10px;
+    margin: 60px 20px 0 50px;
+}
+
+.about-content div h3 {
+    padding: 2px;
+    text-align: center;
+    color: rgb(36, 36, 36);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.about-content div p {
+    width: 80%;
+    padding: 5px;
+    margin-left: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.bg-color {
+    width: 100%;
+    height: 100vh;
+    background-color:#ece8df ;
+}
+.grid-grilla { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "header header header header"
+        "grid-seccion grid-seccion grid-seccion grid-seccion"
+        "grid-seccion grid-seccion grid-seccion grid-seccion"
+        "footer footer footer footer";
+    }
+.header { 
+    grid-area: header; 
+}
+.grid-seccion { 
+    grid-area: grid-seccion; 
+}
+.grid-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-evenly ;
+    align-items: center;
+    gap: 10px;
+    height: 300px;
+}
+.grid-content div {
+    width: 300px;
+    height: 200px;
+}
+.grid-content h3 {
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.grid-content p {
+    text-align:justify ;
+    font-family: 'Montserrat', sans-serif;
+}
+.titulo-servicios {
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(46, 43, 43);
+    font-family: 'Montserrat', sans-serif;
+}
+.footer-servicios {
+    grid-area: footer; 
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    
+    .titulo1  {
+        color: black;
+        font-size: 5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 550;
+    }
+    
+    .titulo2{
+        color: black;
+        font-size: 3rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        margin-top: 10px;
+        
+    }  
+    
+    footer {
+        position: absolute;
+        bottom: 5px;
+        left: 27rem;
+    }
+    .about-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-content img {
+        width: 450px;
+        margin: 70px 20px 0 40px;
+    }
+    
+    .about-content div h3 {
+        padding: 2px;
+        text-align: center;
+        color: rgb(36, 36, 36);
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .about-content div p {
+        width: 80%;
+        padding: 5px;
+        margin-left: 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.1rem;
+        text-align: justify;
+    }
+    
+   
+
+
+}
+
+@media screen and (max-width: 850px) {
+    
+    .titulo1  {
+        font-size: 4.8rem;
+    }
+    
+    .titulo2{
+        font-size: 2.8rem;
+        margin-top: 10px;
+        
+    }  
+
+    
+    footer {
+        position: absolute;
+        bottom: 5px;
+        left: 23rem;
+    } 
+}
+
+
+@media  screen and (max-width:830px) {
+    .titulo1  {
+        font-size: 4.7rem;
+    }
+    
+    .titulo2{
+        font-size: 2.7rem;
+        margin-top: 10px;
+        
+    }  
+
+    
+    footer {
+        position: absolute;
+        bottom: 5px;
+        left: 20rem;
+    } 
+    
+}
+
+
+
+@media screen and (max-width:768px) {
+    .titulo1  {
+        font-size: 4.3rem;
+    }
+    
+    .titulo2{
+        font-size: 2.3rem;
+        margin-top: 10px;
+        
+    }
+    footer {
+        position: absolute;
+        bottom: 5px;
+        left: 19rem;
+    }
+    .about-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about-content img {
+        width: 350px;
+        border: 2px solid rgb(73, 62, 62);
+        border-radius: 10px;
+        margin: 20px 0 5px 220px
+    }
+    
+    .about-content div h3 {
+        text-align: center;
+        margin-top: 5px;
+    }
+    .about-content div p {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+
+@media  screen and (max-width:710) {
+    .titulo1  {
+        font-size: 4.1rem;
+    }
+    
+    .titulo2{
+        font-size: 2.1rem;
+        margin-top: 10px;
+        
+    }
+
+    footer {
+        position: absolute;
+        bottom: 5px;
+        left: 17rem;
+    }
+   
+}
+
+
+
+@media screen and (max-width:682px){
+    .titulo1  {
+        font-size: 4rem;
+    }
+    
+    .titulo2{
+        font-size: 2rem;
+        margin-top: 10px;
+        
+    }
+
+    footer {
+        position: absolute;
+        bottom: 5px;
+        left: 17rem;
+    }
+    .about-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about-content img {
+        width: 250px;
+        border: 2px solid rgb(73, 62, 62);
+        border-radius: 10px;
+        margin: 50px 0 5px 180px
+    }
+    
+    .about-content div h3 {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .about-content div p {
+        width: 60%;
+        
+    }
+}
+
+
+
+@media  screen and (max-width: 655px){ 
+    .titulo1  {
+        font-size: 3.8rem;
+    }
+    
+    .titulo2{
+        font-size: 1.8rem;
+        margin-top: 10px;
+        
+    }
+
+    footer {
+        position: absolute;
+        bottom:10px;
+        left: 16rem;
+    }
+    .about-content {
+        display: flex;
+        
+    }
+    
+    .about-content img {
+        width: 200px;
+        border: 2px solid rgb(73, 62, 62);
+        border-radius: 10px;
+        margin: 20px 0 5px 100px
+    }
+    
+    .about-content div h3 {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .about-content div p {
+        width: 60%;
+        
+    }
+}
+
+
+@media screen and (max-width:633px) {
+    .titulo1  {
+        font-size: 3.6rem;
+    }
+    
+    .titulo2{
+        font-size: 1.6rem;
+        margin-top: 10px;
+        
+    } 
+    .grid-grilla { 
+        display: grid;
+        grid-template-columns: 1fr  ;
+        grid-template-areas:
+            "header  "
+            "grid-seccion "
+            "grid-seccion "
+            "footer  ";
+        }
+    
+        .grid-content {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            height: 200px;
+            justify-content: center ;
+            align-items: center;
+            gap: 5px;
+        
+        }
+        .titulo-servicios {
+            font-size: 2rem;
+        }
+        .grid-content p {
+            font-size: 0.8rem;
+        }
+        .footer-servicios {
+            grid-area: footer; 
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+
+}
+
+
+
+
+@media screen and (max-width:589px) {
+    .titulo1  {
+        font-size: 3.4rem;
+    }
+    
+    .titulo2{
+        font-size: 1.5rem;
+        margin-top: 10px;
+
+}
+footer {
+    position: absolute;
+    bottom: 5px;
+    left: 15rem;
+}
+
+    
+
+
+
+
+@media screen and (max-width:581px) {
+    .titulo1  {
+        font-size: 3.2rem;
+    }
+    
+    .titulo2{
+        font-size: 1.5rem;
+        margin-top: 10px;
+        
+    } 
+
+    footer {
+        position: absolute;
+        bottom: 5px;
+        left: 14rem;
+    }
+}
+
+@media screen and (max-width:533px) {
+    .titulo1  {
+        font-size: 3rem;
+    }
+    
+    .titulo2{
+        font-size: 1.3rem;
+        margin-top: 10px;
+        
+    }
+    footer {
+        position: absolute;
+        bottom: 5px;
+        left: 13rem;
+    }
+    .grid-grilla { 
+        display: grid;
+        grid-template-columns: 1fr  ;
+        grid-template-areas:
+            "header  "
+            "grid-seccion "
+            "grid-seccion "
+            "footer  ";
+        }
+    
+        .grid-content {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            height: 500px;
+            justify-content: center ;
+            align-items: center;
+            gap: 5px;
+        
+        }
+        .titulo-servicios {
+            font-size: 2rem;
+        }
+        .grid-content p {
+            font-size: 0.9rem;
+        }
+        .footer-servicios {
+            grid-area: footer; 
+        
+        }
+
+}
+
+@media screen and (max-width:482px) {
+    .titulo1  {
+        font-size: 2.8rem;
+    }
+    
+    .titulo2{
+        font-size: 1.2rem;
+        margin-top: 10px;
+        
+    } 
+    footer {
+        position: absolute;
+        bottom: 5px;
+        left: 10rem;
+    }
+}
+
+@media screen and (max-width:451px) {
+    .titulo1  {
+        font-size: 2.5rem;
+    }
+    
+    .titulo2{
+        font-size: 1.1rem;
+        margin-top: 10px;
+        
+    } 
+    footer {
+        position: absolute;
+        bottom: 5px;
+        left: 8.9rem;
+    }
+    .grid-grilla { 
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "header  "
+            "grid-seccion  "
+            "grid-seccion "
+            "footer  ";
+        }
+    
+        .grid-content {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            height: 200px;
+            justify-content: center ;
+            align-items: center;
+            gap: 20px;
+        
+        }
+        .titulo-servicios {
+            font-size: 2rem;
+        }
+        .grid-content p {
+            font-size: 0.8rem;
+           
+         }
+
+.footer-servicios {
+    grid-area: footer; 
+    margin-bottom: 0;
+  
+    }
+
+}
+
+
+@media screen and (max-width:410px) {
+    .titulo1  {
+        font-size: 2.1rem;
+    }
+    
+    .titulo2{
+        font-size: 1rem;
+        margin-top: 10px;
+        
+    } 
+    footer {
+        position: absolute;
+        bottom: 5px;
+        left: 8rem;
+    }
+    .grid-grilla { 
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+        grid-template-areas:
+            "header header "
+            "grid-seccion grid-seccion "
+            "grid-seccion grid-seccion"
+            "footer footer ";
+        }
+    
+        .grid-content {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            height: 200px;
+            justify-content: center ;
+            align-items: center;
+            gap: 20px;
+        
+        }
+        .titulo-servicios {
+            font-size: 2rem;
+        }
+        .grid-content p {
+            font-size: 0.8rem;
+        }
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .about-content img {
+            width: 300px;
+            margin: 70px 20px 0 40px;
+        }
+        
+        .about-content div h3 {
+            padding: 2px;
+            text-align: center;
+            color: rgb(36, 36, 36);
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+        .about-content div p {
+            width: 80%;
+            padding: 5px;
+            margin-left: 30px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+}
+
+
+@media screen and (max-width:358px) {
+    .titulo1  {
+        font-size: 1.9rem;
+    }
+    
+    .titulo2{
+        font-size: 1rem;
+        margin-top: 10px;
+        
+    } 
+    footer {
+        position: absolute;
+        bottom: 5px;
+        left: 7rem;
+    }
+    .grid-grilla { 
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+        grid-template-areas:
+            "header header "
+            "grid-seccion grid-seccion "
+            "grid-seccion grid-seccion"
+            "footer footer ";
+        }
+    
+        .grid-content {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            height: 200px;
+            justify-content: center ;
+            align-items: center;
+            gap: 20px;
+        
+        }
+        .titulo-servicios {
+            font-size: 2rem;
+        }
+        .grid-content p {
+            font-size: 0.8rem;
+           
+         }
+}
+
+
+@media screen and (max-width:313px) {
+    .titulo1  {
+        font-size: 1.6rem;
+    }
+    
+    .titulo2{
+        font-size: 0.9rem;
+        margin-top: 10px;
+        
+    } 
+    footer {
+        position: absolute;
+        bottom: 5px;
+        left: 5rem;
+    }
+    .grid-grilla { 
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+        grid-template-areas:
+            "header header "
+            "grid-seccion grid-seccion "
+            "grid-seccion grid-seccion"
+            "footer footer ";
+        }
+    
+        .grid-content {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            height: 200px;
+            justify-content: center ;
+            align-items: center;
+            gap: 20px;
+        
+        }
+        .titulo-servicios {
+            font-size: 2rem;
+        }
+        .grid-content p {
+            font-size: 0.8rem;
+           
+         }
+}
+}
+
+
+
