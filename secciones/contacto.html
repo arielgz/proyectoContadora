@@ -4,28 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- CSS only -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <link rel="stylesheet" href="../estilos/estilos.css">
     <title>Contacto</title>
 
 
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="../index.html"><h3 class="logo">Maria Laura Gómez</h3></a>
-            <ul class="navbar">
-                <li><a href="acercaDeMi.html" >Acerca de mi</a></li>
-                <li><a href="servicios.html" >Servicios</a></li>
-                <li><a href="clientes.html" >Clientes</a></li>
-                <li><a href="consultas.html" >Consultas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="bg-colorContacto">
+    <nav class="navbar navbar-expand-lg bg-navbar pt-3">
+        <div class="container-fluid " >
+        <a class="navbar-brand ms-5 mb-1 titulo-logo " href="../index.html">Maria Laura Gómez</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <section>
-            <h2>Contacto</h2>
-        </section>
+        <div class="collapse navbar-collapse  navBoost" id="navbarNav">
+            <ul class="navbar-nav navBoost">
+            <li class="nav-item   " >
+                <a class="nav-link navA " aria-current="page" href="acercaDeMi.html">Acerca de mi</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link navA  " href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link navA" href="clientes.html">Clientes</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link navA" href="consultas.html">Consultas</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link navA" href="contacto.html"> Contacto</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav> 
+    
+
+
+    <div class="container mt-4">   
+        <div class="mb-2  " >
+            <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Escriba su Nombre y Apellido">
+          </div>
+          <div class="mb-2 " >
+            <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-2">
+            <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="button" class="btn btn-primary">Enviar</button>
+    </div>
+
 
 
 
@@ -42,6 +80,7 @@
 
 
 
-
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

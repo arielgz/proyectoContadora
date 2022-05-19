@@ -2,8 +2,46 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: content-box;
+    
 } 
+/* para boostrap */
 
+.bg-navbar {
+    background-color: #F7F7F7;
+    }
+    .titulo-contacto {
+        font-size: 1.5rem;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        color: #F05454;
+    
+    }
+    .titulo-logo {
+        font-size: 22px;
+        font-weight: 800;
+        color: rgb(16, 16, 16);
+        font-family: 'Montserrat', sans-serif;
+    
+    }
+    .navBoost {
+    display: flex;
+    justify-content: end;
+    }
+    
+    .navA {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 400;
+        color: rgb(16, 16, 16);
+        font-family: 'Montserrat', sans-serif; 
+        padding: 5px;
+    }
+    
+    
+    
+    
+    /*  */
 
 nav {
     background-color:  #F7F7F7;
@@ -95,8 +133,8 @@ nav {
 
 }
 .footer-redes img {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     padding: 10px;
 }
 .footer-redes li  {
@@ -201,7 +239,13 @@ footer {
 }
 .footer-servicios {
     grid-area: footer; 
-    }
+}
+
+.bg-colorContacto {
+    background-color: #f5ebe0 ;
+}
+
+
 
 
 
