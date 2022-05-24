@@ -192,6 +192,74 @@ footer {
     height: 100vh;
     background-color:#ece8df ;
 }
+
+/* seccion servicios */
+
+.card-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+
+}
+
+.card-contenido {
+    width: 20%;
+    height: 90%;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0p 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    overflow: hidden;
+}
+.card-contenido img {
+    width: 70px;
+    height: 70px;
+    margin: 15px 0 0 20px;
+    margin-left: 90px;
+}
+.card-contenido h4 {
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 5px 0;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(41, 41, 41);
+}
+.card-contenido p {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        padding: 5px;
+}
+
+.titulo-servicios {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    margin-top: 20px;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
 .grid-grilla { 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -243,7 +311,7 @@ footer {
 
 .bg-colorContacto {
     background-color: #f5ebe0 ;
-}
+} */
 
 
 
