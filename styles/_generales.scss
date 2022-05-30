@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    
+} 
+footer {
+    position: absolute;
+    bottom: 5px;
+    left: 32.5rem;
+    .footer-redes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    img {
+            width: 20px;
+            height: 20px;
+            padding: 10px;
+   
+        }
+         li {
+            list-style-type: none;
+                }
+    }
+}
+
+

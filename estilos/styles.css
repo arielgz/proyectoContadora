@@ -1,0 +1,507 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+footer {
+  position: absolute;
+  bottom: 5px;
+  left: 32.5rem;
+}
+
+footer .footer-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-redes img {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+
+footer .footer-redes li {
+  list-style-type: none;
+}
+
+.seccion-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+}
+
+.seccion-index .titulo1 {
+  color: black;
+  font-size: 5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 550;
+}
+
+.seccion-index .titulo2 {
+  color: black;
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.bg-img {
+  background: url("../img/bokeh-background-with-dusty-pink.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-img {
+  width: 100%;
+  height: 100vh;
+}
+
+/* para boostrap */
+.bg-navbar {
+  background-color: #F7F7F7;
+}
+
+.titulo-contacto {
+  font-size: 1.5 rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #F05454;
+}
+
+.titulo-logo {
+  font-size: 22px;
+  font-weight: 800;
+  color: #101010;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navBoost {
+  display: flex;
+  justify-content: end;
+}
+
+.navA {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #101010;
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px;
+}
+
+/*  */
+nav {
+  background-color: #F7F7F7;
+  padding: 22px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: end;
+}
+
+.navbar li {
+  margin: 0 15px;
+  list-style-type: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #101010;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar li a:hover {
+  color: #FF6363;
+  font-weight: 500;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1c1a1a;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo:hover {
+  color: #F05454;
+}
+
+/* seccion acerca de mi */
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.about-content img {
+  width: 550px;
+  border: 2px solid #493e3e;
+  border-radius: 10px;
+  margin: 60px 20px 0 80px;
+}
+
+.about-content .titulo-about {
+  padding: 2px;
+  text-align: center;
+  color: #242424;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about-content div p {
+  width: 80%;
+  padding: 5px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.bg-color {
+  width: 100%;
+  height: 100vh;
+  background-color: #ece8df;
+}
+
+/* seccion servicios */
+.card-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.card-contenido {
+  width: 20%;
+  height: 90%;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0p 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  overflow: hidden;
+}
+
+.card-contenido img {
+  width: 70px;
+  height: 70px;
+  margin: 15px 0 0 20px;
+  margin-left: 90px;
+}
+
+.card-contenido h4 {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 5px 0;
+  font-family: "Montserrat", sans-serif;
+  color: #292929;
+}
+
+.card-contenido p {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding: 5px;
+}
+
+.titulo-servicios {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  footer {
+    position: absolute;
+    bottom: 5px;
+    left: 29rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .titulo1 {
+    color: black;
+    font-size: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
+  }
+  .titulo2 {
+    color: black;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  footer {
+    position: absolute;
+    bottom: 5px;
+    left: 25rem;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  footer {
+    position: absolute;
+    bottom: 5px;
+    left: 20rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .titulo1 {
+    font-size: 4.8rem;
+  }
+  .titulo2 {
+    font-size: 2.8rem;
+    margin-top: 10px;
+  }
+  footer {
+    position: absolute;
+    bottom: 5px;
+    left: 22rem;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .titulo1 {
+    font-size: 4.7rem;
+  }
+  .titulo2 {
+    font-size: 2.7rem;
+    margin-top: 10px;
+  }
+  footer {
+    position: absolute;
+    bottom: 5px;
+    left: 20rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .titulo1 {
+    font-size: 4.3rem;
+  }
+  .titulo2 {
+    font-size: 2.3rem;
+    margin-top: 10px;
+  }
+  footer {
+    position: absolute;
+    bottom: 5px;
+    left: 17rem;
+  }
+}
+
+@media screen and (max-width: 710) {
+  .titulo1 {
+    font-size: 4rem;
+  }
+  .titulo2 {
+    font-size: 2.1rem;
+    margin-top: 10px;
+  }
+  footer {
+    position: absolute;
+    bottom: 5px;
+    left: 12rem;
+  }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 40px;
+  }
+  .about-content div p {
+    width: 80%;
+    padding: 5px;
+    margin-left: 80px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 682px) {
+  .titulo1 {
+    font-size: 4rem;
+  }
+  .titulo2 {
+    font-size: 2rem;
+    margin-top: 10px;
+  }
+  footer {
+    position: absolute;
+    bottom: 5px;
+    left: 12rem;
+  }
+}
+
+@media screen and (max-width: 655px) {
+  .titulo1 {
+    font-size: 3.8rem;
+  }
+  .titulo2 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+  }
+  footer {
+    position: absolute;
+    bottom: 10px;
+    left: 16rem;
+  }
+  .about-content {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 633px) {
+  .titulo1 {
+    font-size: 3.6rem;
+  }
+  .titulo2 {
+    font-size: 1.6rem;
+    margin-top: 10px;
+  }
+  footer {
+    position: absolute;
+    bottom: 10px;
+    left: 15rem;
+  }
+}
+
+@media screen and (max-width: 589px) {
+  .titulo1 {
+    font-size: 3.4rem;
+  }
+  .titulo2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  footer {
+    position: absolute;
+    bottom: 5px;
+    left: 12.5rem;
+  }
+}
+
+@media screen and (max-width: 581px) {
+  .titulo1 {
+    font-size: 3.2rem;
+  }
+  .titulo2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  footer {
+    position: absolute;
+    bottom: 5px;
+    left: 10rem;
+  }
+}
+
+@media screen and (max-width: 533px) {
+  .titulo1 {
+    font-size: 3rem;
+  }
+  .titulo2 {
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
+  footer {
+    position: absolute;
+    bottom: 5px;
+    left: 13rem;
+  }
+}
+
+@media screen and (max-width: 482px) {
+  .titulo1 {
+    font-size: 2.8rem;
+  }
+  .titulo2 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  footer {
+    position: absolute;
+    bottom: 5px;
+    left: 10rem;
+  }
+}
+
+@media screen and (max-width: 451px) {
+  .titulo1 {
+    font-size: 2.5rem;
+  }
+  .titulo2 {
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+  footer {
+    position: absolute;
+    bottom: 5px;
+    left: 7rem;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .titulo1 {
+    font-size: 2.1rem;
+  }
+  .titulo2 {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  footer {
+    position: absolute;
+    bottom: 5px;
+    left: 6rem;
+  }
+}
+
+@media screen and (max-width: 358px) {
+  .titulo1 {
+    font-size: 1.9rem;
+  }
+  .titulo2 {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  footer {
+    position: absolute;
+    bottom: 5px;
+    left: 4rem;
+  }
+}
+
+@media screen and (max-width: 313px) {
+  .titulo1 {
+    font-size: 1.6rem;
+  }
+  .titulo2 {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  footer {
+    position: absolute;
+    bottom: 5px;
+    left: 5rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
