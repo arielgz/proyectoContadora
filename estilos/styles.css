@@ -146,7 +146,9 @@ nav {
   margin-top: 10px;
 }
 
+/* mixin */
 .about-content img {
+  height: auto;
   width: 550px;
   border: 2px solid #493e3e;
   border-radius: 10px;
@@ -187,9 +189,12 @@ nav {
   margin-top: 5px;
 }
 
-.card-contenido {
+.servicios-card, .card-contenido {
   width: 20%;
   height: 90%;
+}
+
+.card-contenido {
   margin: 15px;
   border-radius: 10px;
   box-shadow: 0p 1px 10px rgba(0, 0, 0, 0.2);
