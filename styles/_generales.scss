@@ -4,10 +4,8 @@
     box-sizing: content-box;
     
 } 
-footer {
-    position: absolute;
-    bottom: 5px;
-    left: 32.5rem;
+.footers{
+    margin-bottom: 0;
     .footer-redes {
         display: flex;
         justify-content: center;
