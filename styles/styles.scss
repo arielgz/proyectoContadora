@@ -7,19 +7,13 @@
 /* para boostrap */
 
 .bg-navbar {
-    background-color: #F7F7F7;
+    background-color: #faf4f3;
     }
-    .titulo-contacto {
-        font-size: 1.5 rem;
-        text-align: center;
-        font-family: 'Montserrat', sans-serif;
-        color: #F05454;
     
-    }
     .titulo-logo {
-        font-size: 22px;
+        font-size: 1.3rem;
         font-weight: 800;
-        color: rgb(16, 16, 16);
+        color: #ce6b87 ;
         font-family: 'Montserrat', sans-serif;
     
     }
@@ -37,6 +31,41 @@
         padding: 5px;
     }
     
+
+.label-boost {
+    font-family:  'Montserrat', sans-serif;;
+}
+.form-container {
+    width: 65%;
+}
+
+.botonBoots-color {
+    background-color:#ec87a3;
+    width: 20%;
+    border: none;
+}
+.botonBoots-color:hover {
+    background-color: #cb8398ec;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 10px;
+}
+::placeholder {
+    font-family: $font;
+}
+
+.input-contacto{
+    background-color:#FDFDF6 ;
+
+}
+
+
+
+
     /*  */
     
 
@@ -50,7 +79,7 @@ nav {
 } 
 
 .navbar li {
-    margin: 0 15px;
+    margin: 0 12px;
     list-style-type: none;
 
 }
@@ -64,7 +93,7 @@ nav {
 }
 
 .navbar li a:hover {
-    color: #FF6363;
+    color: #cb5b7a;
     font-weight: 500;
 
 }
@@ -85,12 +114,6 @@ nav {
 }
 
 
-
-
-
-
-
-
 /* seccion acerca de mi */
 
 .about-content {
@@ -100,9 +123,7 @@ nav {
     margin-top: 10px;
 }
 
-
 /* mixin */
-
 @mixin sizes ($width, $height) {
     height: $height;
     width: $width;
@@ -114,14 +135,6 @@ nav {
     margin: 60px 20px 10px 80px;
 
 }
-
-// .about-content img {
-//     width: 550px;
-//     border: 2px solid rgb(73, 62, 62);
-//     border-radius: 10px;
-//     margin: 60px 20px 0 80px;
-// }
-
 .about-content .titulo-about {
     padding: 2px;
     text-align: center;
@@ -130,6 +143,9 @@ nav {
     margin-bottom: 15px;
     font-family: $font;
 
+}
+.about-content div {
+    margin-top: 10px;
 }
 .about-content div p {
     width: 80%;
@@ -141,11 +157,10 @@ nav {
     text-align: justify;
 }
 
-
 .bg-color {
     width: 100%;
     height: 100vh;
-    background-color:#ece8df ;
+    background-color:#FDFDF6;
 }
 
 
@@ -180,16 +195,6 @@ nav {
 
 
 
-// .card-contenido {
-//     width: 20%;
-//     height: 90%;
-//     margin: 15px;
-//     border-radius: 10px;
-//     box-shadow: 0p 1px 10px rgba(0,0,0,0.2);
-//     cursor: default;
-//     overflow: hidden;
-// }
-
 .card-contenido img {
     width: 70px;
     height: 70px;
@@ -220,6 +225,7 @@ nav {
 
 
 /* Seccion Links de interes */
+
 .links-content {
     display: flex;
     justify-content: space-evenly;
@@ -235,7 +241,7 @@ nav {
 }
 
 .img-links img {
-    width: 680px;
+    width: 600px;
     border: 0.5px solid rgb(36, 36, 36);
     border-radius: 10px;
     margin-top: 5px;
@@ -243,8 +249,9 @@ nav {
 
 .links-info ul li {
     list-style-type: none;
-    padding: 2px;
-    margin: 3px 0;
+    padding: 1px;
+    margin: 5px 0;
+    
     
     
 }
@@ -264,7 +271,6 @@ nav {
 
 .clientes-container {
     width: 100%;
-    display: flex;
 
 }
 .clientes-content {
@@ -272,11 +278,22 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
+
 }
 .clientes-img img {
     width: 200px;
-    height: auto;
+    padding: 10px 0 10px 0;
+    margin: auto;
+    opacity: 0.9;
+}
+
+.clientes-img img {
+    filter: grayscale(100%);
+}
+img:hover{
+    filter: grayscale(0%);
+    transition: all 0.2s ;
 }
 
 
@@ -288,12 +305,6 @@ nav {
 /* medias queries */
 
 @media screen and (max-width:1190px){
-    .about-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10px;
-    }
     
     .about-content img {
         width: 550px;
@@ -311,6 +322,9 @@ nav {
         font-family: 'Montserrat', sans-serif;
     
     }
+    .about-content div {
+        margin-top: 20px;
+    }
     .about-content div p {
         width: 80%;
         padding: 5px;
@@ -325,45 +339,33 @@ nav {
 
 
 @media screen and (max-width:1122px){
-    .about-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10px;
-    }
+    
     
     .about-content img {
-        width: 550px;
+        width: 540px;
         border: 2px solid rgb(73, 62, 62);
         border-radius: 10px;
         margin: 50px 20px 10px 80px;
     }
     
     .about-content .titulo-about {
-        padding: 3px;
-        color: rgb(36, 36, 36);
+        padding: 2px;
         font-size: 2rem;
         margin-top: 60px;
         text-align: center;
         font-family: 'Montserrat', sans-serif;
     
     }
+    
     .about-content div p {
         width: 80%;
         padding: 5px;
         margin-left: 30px;
-        margin-top:  10px;
-        margin-bottom: 0px;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.1rem;
         text-align: justify;
     }  
-    .card-img  img {
-        width: 70px;
-        height: 70px;
-        margin: 15px 0 0 20px;
-        margin-left: 85px;
-    }
+    
 
 }
 
@@ -380,9 +382,7 @@ nav {
     }
     
     .about-content img {
-        width: 520px;
-        border: 2px solid rgb(73, 62, 62);
-        border-radius: 10px;
+        width: 530px;
         margin: 50px 20px 10px 80px;
     }
     
@@ -400,8 +400,6 @@ nav {
         padding: 5px;
         margin-left: 30px;
         margin-top:  15px;
-        margin-bottom: 0px;
-        font-family: 'Montserrat', sans-serif;
         font-size: 1.1rem;
         text-align: justify;
     }  
@@ -418,13 +416,7 @@ nav {
 
 
 @media screen and (max-width:1074px){
-    .about-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10px;
-    }
-    
+  
     .about-content img {
         width: 520px;
         border: 2px solid rgb(73, 62, 62);
@@ -445,8 +437,6 @@ nav {
         width: 80%;
         padding: 5px;
         margin-left: 30px;
-        margin-top:  10px;
-        margin-bottom: 0px;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.1rem;
         text-align: justify;
@@ -458,40 +448,25 @@ nav {
         margin-left: 75px;
     }
 
+
+   
+
 }
 
 
 @media screen and (max-width:1024px){
-    .about-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10px;
-    }
-    
+   
     .about-content img {
-        width: 520px;
-        border: 2px solid rgb(73, 62, 62);
-        border-radius: 10px;
+        width: 510px;
         margin: 50px 20px 10px 80px;
     }
-    
-    .about-content .titulo-about {
-        padding: 3px;
-        color: rgb(36, 36, 36);
-        font-size: 2rem;
-        margin-top: 40px;
-        text-align: center;
-        font-family: 'Montserrat', sans-serif;
-    
-    }
+
     .about-content div p {
         width: 80%;
-        padding: 5px;
+        padding: 2px;
         margin-left: 30px;
-        margin-top:  10px;
-        margin-bottom: 10px;
-        font-family: 'Montserrat', sans-serif;
+        margin-top:  5px;
+        margin-bottom: 5px;
         font-size: 1.1rem;
         text-align: justify;
     }  
@@ -512,16 +487,14 @@ nav {
     
     .about-content img {
         width:500px;
-        border: 2px solid rgb(73, 62, 62);
-        border-radius: 10px;
-        margin: 20px 20px 10px 80px;
+        margin: 30px 20px 10px 60px;
     }
     
     .about-content .titulo-about {
         padding: 3px;
         color: rgb(36, 36, 36);
         font-size: 1.7rem;
-        margin-top: 50px;
+        margin-top: 40px;
         text-align: center;
         font-family: 'Montserrat', sans-serif;
     
@@ -531,7 +504,6 @@ nav {
         padding: 5px;
         margin-left: 80px;
         margin-bottom:  40px;
-        font-family: 'Montserrat', sans-serif;
         font-size: 1.1rem;
         text-align: justify;
     }  
@@ -555,7 +527,86 @@ nav {
         padding: 5px;
         margin: auto;
     }
+    .clientes-container {
+        width: 100%;
+        display: flex;
+    
+    }
+    .clientes-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .clientes-img img {
+        width: 200px;
+        padding: 15px;
+        opacity: 0.9;
+    }
+    
+    .clientes-img img {
+        filter: grayscale(100%);
+    }
+    img:hover{
+        filter: grayscale(0%);
+        transition: all 0.2s ;
+    }
+    .links-content {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .links-title {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 20px;
+        font-family: 'Montserrat', sans-serif;
+    
+    }
+    
+    .img-links img {
+        width: 600px;
+        border: 0.5px solid rgb(36, 36, 36);
+        border-radius: 10px;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+    
+    .links-info ul li {
+        list-style-type: none;
+        padding: 1px;
+        margin: 5px 0;
+        
+        
+        
+    }
+    .links-info {
+        margin-top: 5px;
+    }
+    
+    .links-info ul li a {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.1rem;
+        text-align: center;
+        color: rgb(36, 30, 94);
+        margin: auto;
+    }
+
 }
+
+
+
+
+
+
+
 @media screen and (max-width:950px){
     .card-img  img {
         margin-left: 295px;
@@ -602,10 +653,7 @@ nav {
 }
 
 .about-content img {
-    width: 450px;
-    border: 2px solid rgb(73, 62, 62);
-    border-radius: 10px;
-    margin: 50px 20px 10px 80px;
+    width: 490px;
 }
 
 .about-content .titulo-about {
@@ -622,7 +670,6 @@ nav {
     padding: 5px;
     margin-left: 80px;
     margin-bottom:  60px;
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.1rem;
     text-align: justify;
 }  
@@ -671,9 +718,7 @@ nav {
     }
     
     .about-content img {
-        width: 400px;
-        border: 2px solid rgb(73, 62, 62);
-        border-radius: 10px;
+        width: 480px;
         margin: 50px 20px 10px 80px;
     }
     
@@ -724,14 +769,13 @@ nav {
         width: 470px;
         border: 2px solid rgb(73, 62, 62);
         border-radius: 10px;
-        margin: 50px 20px 10px 30px;
+        margin: 50px 20px 10px 70px;
     }
-    
     .about-content .titulo-about {
-        padding: 2px;
+        padding: 3px;
         color: rgb(36, 36, 36);
-        font-size: 1.8rem;
-        margin-top: 15px;
+        font-size: 1.7rem;
+        margin-top: 30px;
         text-align: center;
         font-family: 'Montserrat', sans-serif;
     
@@ -739,12 +783,12 @@ nav {
     .about-content div p {
         width: 80%;
         padding: 5px;
-        margin-left: 40px;
-        margin-top:  10px;
+        margin-left: 80px;
+        margin-bottom:  60px;
         font-family: 'Montserrat', sans-serif;
-        font-size: 1rem;
+        font-size: 1.1rem;
         text-align: justify;
-    }
+    } 
     .card-container {
         width: 100%;
         height: auto;
@@ -790,7 +834,7 @@ nav {
     }
     
     .titulo2{
-        font-size: 2.6rem;
+        font-size: 2.4rem;
         margin-top: 10px;
     }
     .about-content {
@@ -807,12 +851,12 @@ nav {
         border-radius: 10px;
         margin: 40px 20px 10px 30px;
     }
-    
+
     .about-content .titulo-about {
-        padding: 2px;
+        padding: 3px;
         color: rgb(36, 36, 36);
-        font-size: 1.8rem;
-        margin-top: 15px;
+        font-size: 1.7rem;
+        margin-top: 30px;
         text-align: center;
         font-family: 'Montserrat', sans-serif;
     
@@ -820,12 +864,13 @@ nav {
     .about-content div p {
         width: 80%;
         padding: 5px;
-        margin-left: 40px;
-        margin-top:  30px;
+        margin-left: 80px;
+        margin-bottom:  60px;
         font-family: 'Montserrat', sans-serif;
-        font-size: 1rem;
+        font-size: 1.1rem;
         text-align: justify;
-    }  
+    } 
+
     .card-container {
         width: 100%;
         height: auto;
@@ -869,7 +914,7 @@ nav {
     }
     
     .titulo2{
-        font-size: 2.6rem;
+        font-size: 2.3rem;
         margin-top: 10px;
     }
     .about-content {
@@ -888,10 +933,10 @@ nav {
     }
     
     .about-content .titulo-about {
-        padding: 2px;
+        padding: 3px;
         color: rgb(36, 36, 36);
-        font-size: 1.8rem;
-        margin-top: 15px;
+        font-size: 1.7rem;
+        margin-top: 30px;
         text-align: center;
         font-family: 'Montserrat', sans-serif;
     
@@ -899,12 +944,12 @@ nav {
     .about-content div p {
         width: 80%;
         padding: 5px;
-        margin-left: 40px;
-        margin-top:  30px;
+        margin-left: 70px;
+        margin-bottom:  60px;
         font-family: 'Montserrat', sans-serif;
-        font-size: 1rem;
+        font-size: 1.1rem;
         text-align: justify;
-    }  
+    }   
     .card-container {
         width: 100%;
         height: auto;
@@ -954,7 +999,7 @@ nav {
     }
     
     .titulo2{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         margin-top: 7px;
     }
 
@@ -985,8 +1030,8 @@ nav {
     .about-content div p {
         width: 80%;
         padding: 5px;
-        margin-left: 40px;
-        margin-top:  30px;
+        margin-left: 70px;
+        margin-top:  50px;
         font-family: 'Montserrat', sans-serif;
         font-size: 1rem;
         text-align: justify;
@@ -1021,6 +1066,16 @@ nav {
         margin: auto;
     }
      
+}
+
+@media screen and (max-width:655px){
+    .img-links img {
+        width: 580px;
+        border: 0.5px solid rgb(36, 36, 36);
+        border-radius: 10px;
+        margin-left: 10px;
+
+    }  
 }
 @media screen and (max-width:650px){
    
@@ -1030,7 +1085,7 @@ nav {
     }
     
     .titulo2{
-        font-size: 2.5rem;
+        font-size: 2.1rem;
         margin-top: 7px;
     }
 
@@ -1043,7 +1098,7 @@ nav {
     }
     
     .about-content img {
-        width: 440px;
+        width: 430px;
         border: 2px solid rgb(73, 62, 62);
         border-radius: 10px;
         margin: 40px 20px 10px 30px;
@@ -1061,8 +1116,8 @@ nav {
     .about-content div p {
         width: 80%;
         padding: 5px;
-        margin-left: 40px;
-        margin-top:  30px;
+        margin-left: 70px;
+        margin-top:  50px;
         font-family: 'Montserrat', sans-serif;
         font-size: 1rem;
         text-align: justify;
@@ -1096,17 +1151,70 @@ nav {
         padding: 5px;
         margin: auto;
     }
-     
+
+    .links-content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .links-title {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 20px;
+        font-family: 'Montserrat', sans-serif;
+    
+    }
+    
+    .img-links img {
+        width: 560px;
+        border: 0.5px solid rgb(36, 36, 36);
+        border-radius: 10px;
+        margin-left: 10px;
+
+    }
+    
+    .links-info ul li {
+        list-style-type: none;
+        padding: 1px;
+        margin: 5px 0;
+        
+        
+        
+    }
+    .links-info {
+        margin-top: 5px;
+    }
+    
+    .links-info ul li a {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.1rem;
+        text-align: center;
+        color: rgb(36, 30, 94);
+    }
+
+
+
+    
+    
+
+
 }
+
+
+
+
+
 @media screen and (max-width:620px){
    
     
     .titulo1  {
-        font-size: 3.7rem;
+        font-size: 3.6rem;
     }
     
     .titulo2{
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-top: 7px;
     }
 
@@ -1119,7 +1227,7 @@ nav {
     }
     
     .about-content img {
-        width: 440px;
+        width: 450px;
         border: 2px solid rgb(73, 62, 62);
         border-radius: 10px;
         margin: 40px 20px 10px 30px;
@@ -1137,8 +1245,8 @@ nav {
     .about-content div p {
         width: 80%;
         padding: 5px;
-        margin-left: 40px;
-        margin-top:  30px;
+        margin-left: 70px;
+        margin-top:  40px;
         font-family: 'Montserrat', sans-serif;
         font-size: 1rem;
         text-align: justify;
@@ -1172,6 +1280,48 @@ nav {
         padding: 5px;
         margin: auto;
     }
+    .links-content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .links-title {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 20px;
+        font-family: 'Montserrat', sans-serif;
+    
+    }
+    
+    .img-links img {
+        width: 550px;
+        border: 0.5px solid rgb(36, 36, 36);
+        border-radius: 10px;
+        margin-left: 8px;
+
+    }
+    
+    .links-info ul li {
+        list-style-type: none;
+        padding: 1px;
+        margin: 5px 0;
+        
+        
+        
+    }
+    .links-info {
+        margin-top: 5px;
+    }
+    
+    .links-info ul li a {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.1rem;
+        text-align: center;
+        color: rgb(36, 30, 94);
+    }
+
      
 }
 
@@ -1183,7 +1333,7 @@ nav {
     }
     
     .titulo2{
-        font-size: 2.5rem;
+        font-size: 1.9rem;
         margin-top: 7px;
     }
 
@@ -1196,7 +1346,7 @@ nav {
     }
     
     .about-content img {
-        width: 440px;
+        width: 430px;
         border: 2px solid rgb(73, 62, 62);
         border-radius: 10px;
         margin: 40px 20px 10px 30px;
@@ -1214,8 +1364,8 @@ nav {
     .about-content div p {
         width: 80%;
         padding: 5px;
-        margin-left: 40px;
-        margin-top:  30px;
+        margin-left: 70px;
+        margin-top:  40px;
         font-family: 'Montserrat', sans-serif;
         font-size: 1rem;
         text-align: justify;
@@ -1249,6 +1399,48 @@ nav {
         padding: 5px;
         margin: auto;
     }
+    .links-content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .links-title {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 20px;
+        font-family: 'Montserrat', sans-serif;
+    
+    }
+    
+    .img-links img {
+        width: 540px;
+        border: 0.5px solid rgb(36, 36, 36);
+        border-radius: 10px;
+        margin-left: 10px;
+
+    }
+    
+    .links-info ul li {
+        list-style-type: none;
+        padding: 1px;
+        margin: 5px 0;
+        
+        
+        
+    }
+    .links-info {
+        margin-top: 5px;
+    }
+    
+    .links-info ul li a {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.1rem;
+        text-align: center;
+        color: rgb(36, 30, 94);
+    }
+
      
 }
 
@@ -1261,13 +1453,12 @@ nav {
 @media screen and (max-width:565px){
    
     .titulo1  {
-        color: black;
-        font-size: 3.1rem;
+        font-size: 3.3rem;
        
     }
     
     .titulo2{
-        font-size: 2.3rem;
+        font-size: 1.8rem;
         margin-top: 5px;
     }
 
@@ -1280,7 +1471,7 @@ nav {
     }
     
     .about-content img {
-        width: 420px;
+        width: 440px;
         border: 2px solid rgb(73, 62, 62);
         border-radius: 10px;
         margin: 30px 20px 10px 30px;
@@ -1334,19 +1525,61 @@ nav {
         padding: 5px;
         margin: auto;
     }
+    .links-content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .links-title {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 20px;
+        font-family: 'Montserrat', sans-serif;
+    
+    }
+    
+    .img-links img {
+        width: 520px;
+        border: 0.5px solid rgb(36, 36, 36);
+        border-radius: 10px;
+        margin-left: 5px;
+
+    }
+    
+    .links-info ul li {
+        list-style-type: none;
+        padding: 1px;
+        margin: 5px 0;
+        
+        
+        
+    }
+    .links-info {
+        margin-top: 5px;
+    }
+    
+    .links-info ul li a {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.1rem;
+        text-align: center;
+        color: rgb(36, 30, 94);
+    }
+
+
 
 
 }
 @media screen and (max-width:537px){
    
     .titulo1  {
-        color: black;
-        font-size: 2.8rem;
+        font-size: 3rem;
        
     }
     
     .titulo2{
-        font-size: 2.3rem;
+        font-size: 1.7rem;
         margin-top: 5px;
     }
 
@@ -1359,7 +1592,7 @@ nav {
     }
     
     .about-content img {
-        width: 420px;
+        width: 430px;
         border: 2px solid rgb(73, 62, 62);
         border-radius: 10px;
         margin: 30px 20px 10px 30px;
@@ -1413,10 +1646,65 @@ nav {
         padding: 5px;
         margin: auto;
     }
+    .links-content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .links-title {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 20px;
+        font-family: 'Montserrat', sans-serif;
+    
+    }
+    
+    .img-links img {
+        width: 500px;
+        border: 0.5px solid rgb(36, 36, 36);
+        border-radius: 10px;
+        margin-left: 10px;
+
+    }
+    
+    .links-info ul li {
+        list-style-type: none;
+        padding: 1px;
+        margin: 5px 0;
+        
+        
+        
+    }
+    .links-info {
+        margin-top: 5px;
+    }
+    
+    .links-info ul li a {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.1rem;
+        text-align: center;
+        color: rgb(36, 30, 94);
+    }
+
 
 
 }
+
 @media screen and (max-width:520px){
+
+    .titulo1  {
+        font-size: 2.9rem;
+    }
+    
+    .titulo2{
+        font-size: 1.6rem;
+        margin-top: 7px;
+    }
+
+
+
     .card-img  img {
         margin: 15px 0 0 20px;
         margin-left: 112px;
@@ -1429,6 +1717,48 @@ nav {
         padding: 5px;
         margin: auto;
     }
+    .links-content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .links-title {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 20px;
+        font-family: 'Montserrat', sans-serif;
+    
+    }
+    
+    .img-links img {
+        width: 470px;
+        border: 0.5px solid rgb(36, 36, 36);
+        border-radius: 10px;
+        margin-left: 5px;
+
+    }
+    
+    .links-info ul li {
+        list-style-type: none;
+        padding: 1px;
+        margin: 5px 0;
+        
+        
+        
+    }
+    .links-info {
+        margin-top: 5px;
+    }
+    
+    .links-info ul li a {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.1rem;
+        text-align: center;
+        color: rgb(36, 30, 94);
+    }
+
     
      
 }
@@ -1438,11 +1768,11 @@ nav {
    
     
     .titulo1  {
-        font-size: 2.9rem;
+        font-size: 2.8rem;
     }
     
     .titulo2{
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         margin-top: 7px;
     }
 
@@ -1455,10 +1785,10 @@ nav {
     }
     
     .about-content img {
-        width: 440px;
+        width: 420px;
         border: 2px solid rgb(73, 62, 62);
         border-radius: 10px;
-        margin: 40px 20px 10px 30px;
+        margin: 40px 30px 30px 30px;
     }
     
     .about-content .titulo-about {
@@ -1498,7 +1828,7 @@ nav {
     
     .card-img  img {
         margin: 15px 0 0 20px;
-        margin-left: 115px;
+        margin-left: 110px;
     }
     
     .card-titulo p {
@@ -1508,6 +1838,48 @@ nav {
         padding: 5px;
         margin: auto;
     }
+    .links-content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .links-title {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 20px;
+        font-family: 'Montserrat', sans-serif;
+    
+    }
+    
+    .img-links img {
+        width: 440px;
+        border: 0.5px solid rgb(36, 36, 36);
+        border-radius: 10px;
+        margin-left:5px;
+
+    }
+    
+    .links-info ul li {
+        list-style-type: none;
+        padding: 1px;
+        margin: 5px 0;
+        
+        
+        
+    }
+    .links-info {
+        margin-top: 5px;
+    }
+    
+    .links-info ul li a {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.1rem;
+        text-align: center;
+        color: rgb(36, 30, 94);
+    }
+
     
      
 }
