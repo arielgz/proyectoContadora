@@ -1884,6 +1884,126 @@ img:hover{
      
 }
 
+@media screen and (max-width:480px){
+   
+    
+    .titulo1  {
+        font-size: 2.6rem;
+    }
+    
+    .titulo2{
+        font-size: 1.3rem;
+        margin-top: 7px;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    
+    .about-content img {
+        width: 400px;
+        margin: 20px 10px 30px 10px;
+    }
+    
+    .about-content .titulo-about {
+        padding: 2px;
+        color: rgb(36, 36, 36);
+        font-size: 1.8rem;
+        margin-top: 15px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    
+    }
+    .about-content div p {
+        width: 80%;
+        padding: 5px;
+        margin-left: 30px;
+        margin-top:  30px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        text-align: justify;
+    }  
+    .card-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    
+    }
+    .card-contenido {
+        width: 60%;
+        margin: 15px;
+        cursor: default;
+        overflow: hidden;
+    }
+    
+    .card-img  img {
+        margin: 15px 0 0 20px;
+        margin-left: 110px;
+    }
+    
+    .card-titulo p {
+        width: 50%;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        padding: 5px;
+        margin: auto;
+    }
+    .links-content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .links-title {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 20px;
+        font-family: 'Montserrat', sans-serif;
+    
+    }
+    
+    .img-links img {
+        width: 410px;
+        border: 0.5px solid rgb(36, 36, 36);
+        border-radius: 10px;
+        margin-left:5px;
+
+    }
+    
+    .links-info ul li {
+        list-style-type: none;
+        padding: 1px;
+        margin: 5px 0;
+        
+        
+        
+    }
+    .links-info {
+        margin-top: 5px;
+    }
+    
+    .links-info ul li a {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.1rem;
+        text-align: center;
+        color: rgb(36, 30, 94);
+    }
+
+    
+     
+}
+
+
+
 
 
 
